@@ -1,7 +1,7 @@
 <template>
   <div class="scene" :style="style">
-    <span>{{leftWeight}}</span>
-    <span>{{rightWeight}}</span>
+    <span class="leftMsg">Left Weight: {{leftWeight}}</span>
+    <span class="rightMsg">Right Weight: {{rightWeight}}</span>
     <TeeterTotter
       :style="teeterStyle"
       :leftWeight="leftWeight"
@@ -108,5 +108,13 @@ export default {
   background-color: rgb(228, 224, 224);
   border: 2px solid rgb(88, 79, 79);
   position: absolute;
+}
+.leftMsg {
+  position: absolute;
+  left: 10px;
+}
+.rightMsg {
+  position: absolute;
+  left: 650px;
 }
 </style>

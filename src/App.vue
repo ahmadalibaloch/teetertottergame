@@ -33,7 +33,7 @@ const createBlock = (id, side = "left") => {
   const randomIndex = Math.floor(Math.random() * 3); // 1, 2, 3 , small, medium, large, x-l
   const size = ["small", "medium", "large"][randomIndex];
   const color = ["red", "green", "blue", "yello"][randomIndex];
-  const weight = Math.floor(Math.random() * 10);
+  const weight = 1 + Math.floor(Math.random() * 10); // weight between 1-10
   const pos = [150 + Math.random() * 200, 0]; // within seen left part, withtin height
   if (side == "right") {
     pos[0] += 300;
